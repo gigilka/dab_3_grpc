@@ -3,6 +3,8 @@ package grpc.dab_3;
 import io.grpc.*;
 
 public class EchoServer extends EchoServiceGrpc.EchoServiceImplBase {
+
+    public String gameStatus = "nStarted";
     @Override
     public void echo(EchoRequest request,
                      io.grpc.stub.StreamObserver<EchoResponse> responseObserver) {
